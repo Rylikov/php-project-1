@@ -1,0 +1,37 @@
+{
+    "name": "rinatsin/php-project-lvl1",
+    "type": "project",
+    "description": "PHP Project implements the Brain Games",
+    "keywords": ["php", "games", "brain", "cli"],
+    "authors": [
+        {
+            "name": "rinat salimyanov",
+            "email": "rinatsin@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "scripts": {
+        "phpcs": "phpcs"
+    },
+    "bin": [
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-prime",
+        "bin/brain-progression"
+    ],
+    "autoload": {
+        "files": ["src/engine.php",
+            "src/games/even.php",
+            "src/games/calc.php",
+            "src/games/gcd.php",
+            "src/games/progression.php",
+            "src/games/prime.php"]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }
+}
